@@ -8,8 +8,12 @@ class Appointment
     if (date.is_a?(String))
       @date = date
     end
-    @patient = patient
-    @doctor = doctor
+    if !(patient.is_a?(String))
+      @patient = patient
+    end
+    if !(doctor.is_a?(String))
+      @doctor = doctor
+    end
     @@all << self
   end
   
