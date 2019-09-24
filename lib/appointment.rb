@@ -4,7 +4,7 @@ class Appointment
   
   @@all = []
   
-  def initialize(date = /.*,.*\d*\w*/, patient, doctor)
+  def initialize(date = (/.*,.*\d*\w*/), patient, doctor)
     @date = date
     @patient = patient
     @doctor = doctor
