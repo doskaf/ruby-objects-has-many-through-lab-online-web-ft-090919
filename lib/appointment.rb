@@ -5,13 +5,13 @@ class Appointment
   @@all = []
   
   def initialize(doctor, patient, date)
-    if (date.is_a?(String))
+    
       @date = date
-    end
+    
     if !(patient.is_a?(String))
       @patient = patient
     end
-    if (doctor.is_a?(String))
+    if !(doctor.is_a?(String))
       @doctor = doctor
     end
     @@all << self
