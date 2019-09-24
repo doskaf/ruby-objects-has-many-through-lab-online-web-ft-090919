@@ -4,7 +4,7 @@ class Appointment
   
   @@all = []
   
-  def initialize(doctor, patient, date)
+  def initialize(doctor, date, patient)
     if (date.is_a?(String))
       @date = date
     end
