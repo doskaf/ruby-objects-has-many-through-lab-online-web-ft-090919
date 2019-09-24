@@ -9,8 +9,8 @@ class Patient
     @@all << self
   end
   
-  def new_appointment(date = (/.*,.*\d*\w*/), doctor)
-    Appointment.new(date, self, doctor)
+  def new_appointment(doctor, date)
+    Appointment.new(self, doctor, date)
   end
   
   def self.all
